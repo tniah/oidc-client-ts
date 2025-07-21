@@ -1,4 +1,4 @@
-[oidc-client-ts](https://github.com/authts/oidc-client-ts) is a TypeScript library intended to be used by web applications and run in browsers. It provides protocol support for OIDC and OAuth2, as well as management functions for user sessions and access tokens management.
+[oidc-client-ts](https://github.com/tniah/oidc-client-ts) is a TypeScript library intended to be used by web applications and run in browsers. It provides protocol support for OIDC and OAuth2, as well as management functions for user sessions and access tokens management.
 
 If you are unfamiliar with OpenID Connect, then you should learn the
 [protocol](https://openid.net/specs/openid-connect-core-1_0.html) first. This
@@ -18,12 +18,12 @@ The remainder of this document will primarily focus on the
 
 # Principle of function
 To understand how to use this library see here:
-- [Authorization Code Grant with Proof Key for Code Exchange (PKCE)](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant-with-pkce.md)
-- [Authorization Code Grant](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant.md)
-- [Resource Owner Password Credentials (ROPC) Grant](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/resource-owner-password-credentials-grant.md)
-- [Refresh Token Grant](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/refresh-token-grant.md)
-- [Silent Refresh Token in iframe Flow](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/silent-refresh-token-in-iframe-flow.md)
-- [Demonstrating Proof of Possession](https://github.com/authts/oidc-client-ts/blob/main/docs/protocols/demonstrating-proof-of-possession.md)
+- [Authorization Code Grant with Proof Key for Code Exchange (PKCE)](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant-with-pkce.md)
+- [Authorization Code Grant](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant.md)
+- [Resource Owner Password Credentials (ROPC) Grant](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/resource-owner-password-credentials-grant.md)
+- [Refresh Token Grant](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/refresh-token-grant.md)
+- [Silent Refresh Token in iframe Flow](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/silent-refresh-token-in-iframe-flow.md)
+- [Demonstrating Proof of Possession](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/demonstrating-proof-of-possession.md)
 
 # UserManager
 
@@ -103,9 +103,9 @@ Additional provider specific settings may be needed for a flawless operation:
 ```javascript
 const mgr = new UserManager({
     // ...
-    // no revoke of "access token" (https://github.com/authts/oidc-client-ts/issues/262)
+    // no revoke of "access token" (https://github.com/tniah/oidc-client-ts/issues/262)
     revokeTokenTypes: ["refresh_token"],
-    // no silent renew via "prompt=none" (https://github.com/authts/oidc-client-ts/issues/366)
+    // no silent renew via "prompt=none" (https://github.com/tniah/oidc-client-ts/issues/366)
     automaticSilentRenew: false,
 });
 ```
@@ -140,12 +140,12 @@ If your app is using hash-based routing, be aware that many OIDC providers appen
 **Correct:** `https://your.org/?code=ab&state=cd#/oidc-callback`
 **Wrong:** `https://your.org/#/oidc-callback?code=ab&state=cd`
 
-Check out [this issue](https://github.com/authts/oidc-client-ts/issues/734#issuecomment-1298381823) for details. (There are also workarounds, as long as your provider doesn't fix the issue)
+Check out [this issue](https://github.com/tniah/oidc-client-ts/issues/734#issuecomment-1298381823) for details. (There are also workarounds, as long as your provider doesn't fix the issue)
 
 # Projects using oidc-client-ts
 
-- [React context provider](https://github.com/authts/react-oidc-context)
-- [Angular sample](https://github.com/authts/sample-angular-oidc-client-ts)
+- [React context provider](https://github.com/tniah/react-oidc-context)
+- [Angular sample](https://github.com/tniah/sample-angular-oidc-client-ts)
 - [Chrome service worker](https://github.com/Alino/OIDC-client-ts-chromium-sample)
 
 
