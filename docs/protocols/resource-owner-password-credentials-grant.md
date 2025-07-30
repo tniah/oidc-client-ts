@@ -16,7 +16,7 @@ To start with, this flow is not part of the [OpenID Connect standard](https://op
 
 Therefore, this flow MUST NOT be used as a replacement for the Authorization Code flow. This flow can only be seen as a replacement of classic form-based user/password authentication directly in the application.
 
-Then, why are we adding this support in `oidc-client-ts`? Well... form-based user/password authentication is actually widely used in the industry, and using a standard IdP as authenticator for this architecture has some benefits (other things, such as password expiration, user management back-office, etc are provided for free by the IdP). So this flow can be an easy help in this scenario. But you MUST NOT use this flow believing that you are having all the security benefits of OpenID Connect or OAuth; you are not.
+Then, why are we adding this support in `oidc-client-lib`? Well... form-based user/password authentication is actually widely used in the industry, and using a standard IdP as authenticator for this architecture has some benefits (other things, such as password expiration, user management back-office, etc are provided for free by the IdP). So this flow can be an easy help in this scenario. But you MUST NOT use this flow believing that you are having all the security benefits of OpenID Connect or OAuth; you are not.
 
 
 ## Principle of function

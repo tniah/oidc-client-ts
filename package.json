@@ -1,20 +1,20 @@
 {
-  "name": "oidc-client-ts",
+  "name": "oidc-client-lib",
   "version": "1.0.0",
   "description": "OpenID Connect (OIDC) & OAuth2 client library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tniah/oidc-client-ts.git"
+    "url": "git+https://github.com/tniah/oidc-client-lib.git"
   },
-  "homepage": "https://github.com/tniah/oidc-client-ts#readme",
+  "homepage": "https://github.com/tniah/oidc-client-lib#readme",
   "license": "Apache-2.0",
-  "main": "dist/umd/oidc-client-ts.js",
-  "types": "dist/types/oidc-client-ts.d.ts",
+  "main": "dist/umd/oidc-client-lib.js",
+  "types": "dist/types/oidc-client-lib.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/types/oidc-client-ts.d.ts",
-      "import": "./dist/esm/oidc-client-ts.js",
-      "require": "./dist/umd/oidc-client-ts.js"
+      "types": "./dist/types/oidc-client-lib.d.ts",
+      "import": "./dist/esm/oidc-client-lib.js",
+      "require": "./dist/umd/oidc-client-lib.js"
     },
     "./package.json": "./package.json"
   },

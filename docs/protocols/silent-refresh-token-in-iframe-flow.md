@@ -1,6 +1,6 @@
 # Silent Refresh Token in iframe Flow
 
-This flow is using the OAuth2.0 [Authorization Code Grant with Proof Key for Code Exchange (PKCE)](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant-with-pkce.md) or [Authorization Code Grant](https://github.com/tniah/oidc-client-ts/blob/main/docs/protocols/authorization-code-grant.md) grants.
+This flow is using the OAuth2.0 [Authorization Code Grant with Proof Key for Code Exchange (PKCE)](https://github.com/tniah/oidc-client-lib/blob/main/docs/protocols/authorization-code-grant-with-pkce.md) or [Authorization Code Grant](https://github.com/tniah/oidc-client-lib/blob/main/docs/protocols/authorization-code-grant.md) grants.
 
 Difference: To silently refresh the token, the server callback is handled in a hidden iframe and not in the main browsing window.
 

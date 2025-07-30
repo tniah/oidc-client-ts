@@ -1,8 +1,8 @@
-# oidc-client-ts
+# oidc-client-lib
 
-[![Stable Release](https://img.shields.io/npm/v/oidc-client-ts.svg)](https://npm.im/oidc-client-ts)
-[![CI](https://github.com/tniah/oidc-client-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/tniah/oidc-client-ts/actions/workflows/ci.yml)
-[![Codecov](https://img.shields.io/codecov/c/github/tniah/oidc-client-ts)](https://app.codecov.io/gh/tniah/oidc-client-ts)
+[![Stable Release](https://img.shields.io/npm/v/oidc-client-lib.svg)](https://npm.im/oidc-client-lib)
+[![CI](https://github.com/tniah/oidc-client-lib/actions/workflows/ci.yml/badge.svg)](https://github.com/tniah/oidc-client-lib/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/tniah/oidc-client-lib)](https://app.codecov.io/gh/tniah/oidc-client-lib)
 
 Library to provide OpenID Connect (OIDC) and OAuth2 protocol support for
 client-side, browser-based JavaScript client applications. Also included is
@@ -30,7 +30,7 @@ Implements the following OAuth 2.0 protocols and supports
 
 ## Table of Contents
 
-- [Documentation](https://authts.github.io/oidc-client-ts/)
+- [Documentation](https://authts.github.io/oidc-client-lib/)
 - [Installation](#installation)
 - [Building the Source](#building-the-source)
 - [Contributing](#contributing)
@@ -41,14 +41,14 @@ Implements the following OAuth 2.0 protocols and supports
 Using [npm](https://npmjs.org/)
 
 ```sh
-$ npm install oidc-client-ts --save
+$ npm install oidc-client-lib --save
 ```
 
 ## Building the Source
 
 ```sh
-$ git clone https://github.com/tniah/oidc-client-ts.git
-$ cd oidc-client-ts
+$ git clone https://github.com/tniah/oidc-client-lib.git
+$ cd oidc-client-lib
 $ npm install
 $ npm run build
 ```
@@ -67,7 +67,7 @@ and then browse to [http://localhost:1234](http://localhost:1234).
 
 **Angular app**
 
-can be found [here](https://github.com/tniah/sample-angular-oidc-client-ts).
+can be found [here](https://github.com/tniah/sample-angular-oidc-client-lib).
 
 ### Running the Tests
 
@@ -82,6 +82,6 @@ We appreciate feedback and contribution to this repo!
 ## License
 
 This project is licensed under the Apache-2.0 license. See the
-[LICENSE](https://github.com/tniah/oidc-client-ts/blob/main/LICENSE) file for
+[LICENSE](https://github.com/tniah/oidc-client-lib/blob/main/LICENSE) file for
 more info.
 

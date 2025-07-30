@@ -12,7 +12,7 @@ the DPoP proof is not compromised.
 To use the DPoP feature add the `dpop` configuration option when instantiating either the UserManager or OidcClient classes:
 
 ```typescript
-import { UserManager } from 'oidc-client-ts';
+import { UserManager } from 'oidc-client-lib';
 
 const settings = {
     authority: 'https://demo.identityserver.io',

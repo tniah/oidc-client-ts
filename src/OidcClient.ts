@@ -258,7 +258,7 @@ export class OidcClient {
     }: UseRefreshTokenArgs): Promise<SigninResponse> {
         const logger = this._logger.create("useRefreshToken");
 
-        // https://github.com/tniah/oidc-client-ts/issues/695
+        // https://github.com/tniah/oidc-client-lib/issues/695
         // In some cases (e.g. AzureAD), not all granted scopes are allowed on token refresh requests.
         // Therefore, we filter all granted scopes by a list of allowable scopes.
         let scope;

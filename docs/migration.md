@@ -1,4 +1,4 @@
-## oidc-client-ts v2.4.0 &rarr; oidc-client-ts v3.0.0
+## oidc-client-lib v2.4.0 &rarr; oidc-client-lib v3.0.0
 
 The API is largely backwards-compatible.
 
@@ -6,7 +6,7 @@ The "crypto-js" software library has been removed; the native crypto/crypto.subt
 
 The behavior of merging claims has been improved.
 
-### [OidcClientSettings](https://authts.github.io/oidc-client-ts/interfaces/OidcClientSettings.html)
+### [OidcClientSettings](https://authts.github.io/oidc-client-lib/interfaces/OidcClientSettings.html)
 
 - the following deprecated properties were **removed**:
   - `clockSkewInSeconds`
@@ -17,13 +17,13 @@ The behavior of merging claims has been improved.
 - default of `response_mode` changed from `query` &rarr; `undefined`
 
 
-## oidc-client v1.11.5 &rarr; oidc-client-ts v2.0.0
+## oidc-client v1.11.5 &rarr; oidc-client-lib v2.0.0
 
 Ported library from JavaScript to TypeScript. The API is largely
 backwards-compatible. The support for the deprecated implicit flow has been
 removed.
 
-### [OidcClientSettings](https://authts.github.io/oidc-client-ts/interfaces/OidcClientSettings.html)
+### [OidcClientSettings](https://authts.github.io/oidc-client-lib/interfaces/OidcClientSettings.html)
 
 - the following properties are now **required**: `authority`, `client_id`,
   `redirect_uri`
@@ -39,7 +39,7 @@ removed.
 - the property `signingKeys` is unused, unless the MetaDataService with this feature is used
   outside of this library.
 
-### [UserManagerSettings](https://authts.github.io/oidc-client-ts/interfaces/UserManagerSettings.html)
+### [UserManagerSettings](https://authts.github.io/oidc-client-lib/interfaces/UserManagerSettings.html)
 
 - the following properties were **renamed**:
   - `accessTokenExpiringNotificationTime` &rarr;
@@ -60,7 +60,7 @@ removed.
     `revokeTokensOnSignout` is `true`. Compared to 1.x, sign out will now fail
     if revocations fail.
 
-### [UserManager](https://authts.github.io/oidc-client-ts/classes/UserManager.html)
+### [UserManager](https://authts.github.io/oidc-client-lib/classes/UserManager.html)
 
 - The shorthand for keeping the popup open after the callback with
   `signoutPopupCallback(true)` is no longer supported. Instead use
@@ -71,11 +71,11 @@ removed.
     types specified fail. Uses the `revokeTokenTypes` setting when no `types`
     are passed.
 
-### [Log](https://authts.github.io/oidc-client-ts/modules/Log.html)
+### [Log](https://authts.github.io/oidc-client-lib/modules/Log.html)
 
 - The getter/setters for `Log.level` and `Log.logger` have been replaced by
   `Log.setLevel()` and `Log.setLogger()`.
 
-### [User](https://authts.github.io/oidc-client-ts/classes/User.html)
+### [User](https://authts.github.io/oidc-client-lib/classes/User.html)
 
 - The getter for `User.expired` now returns `true` when `expires_at` is set to `0`. This was `false` in the previous version.
